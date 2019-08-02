@@ -1,0 +1,61 @@
+@import "../../sass/utils/index";
+
+.container-search-bar {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  @include tablet-forced-header {
+    width: 410px;
+  }
+}
+
+.search-bar-general {
+  border: 1px solid #53a3f4;
+  font-size: 12px;
+  padding: 7px 44px 7px 18px;
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+
+  &::placeholder {
+    color: $black;
+  }
+}
+
+.search-bar-general::placeholder {
+  color: #626262;
+}
+
+.dark-search-bar {
+  background: #424042;
+  border: 1px solid #5d5d5d;
+  color: $white;
+  font-size: 12px;
+  padding: 7px 44px 7px 18px;
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+
+  &::placeholder {
+    color: $white;
+  }
+}
+
+.icon-search-bar-general {
+  color: #fff;
+  background: #1178f2;
+  width: 35px;
+  position: absolute;
+  top: 0px;
+  height: 32px;
+  padding: 3px 3px 3px 8px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  right: 0px;
+  border: none;
+}
+
+.icon-search-bar-general img {
+  position: relative;
+  right: 2px;
+}

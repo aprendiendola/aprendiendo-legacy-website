@@ -1,0 +1,372 @@
+@import "../../sass/utils/index";
+
+.container {
+}
+
+.packages-wrapper {
+  box-sizing: border-box;
+  margin: auto;
+  font-size: 14px;
+  position: relative;
+  a {
+    color: $blue;
+  }
+}
+
+.packages-course-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+  }
+}
+
+.packages-course-section {
+  border-bottom: 0;
+  padding: 25px 15px;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  @include tablet {
+    padding: 25px 30px;
+  }
+}
+
+.packages-heading {
+  @include tablet {
+    background-color: $grey-lighter;
+  }
+}
+
+.packages-heading-inner {
+  margin: 0 auto;
+  padding: 30px 30px 0;
+
+  @include tablet-lg {
+    max-width: 892px;
+    padding: 30px 0 0;
+    display: flex;
+  }
+
+  @include desktop {
+    max-width: 948px;
+  }
+}
+
+.packages-heading-block {
+  position: relative;
+  z-index: 1;
+
+  @include tablet-lg {
+    width: 50%;
+  }
+}
+
+.packages-heading-block-left {
+  @include desktop {
+    position: relative;
+    left: -100px;
+  }
+}
+
+.packages-heading-help {
+  float: right;
+}
+
+.packages-heading-tagline {
+  color: $orange;
+  font-weight: 600;
+}
+
+.packages-heading-title {
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.packages-heading-bg {
+  @include tablet-lg {
+    background-color: $grey-lighter;
+    height: 348px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+}
+
+.packages-help-more {
+  padding: 20px 0;
+  text-align: center;
+
+  a {
+    color: $blue-light;
+    text-decoration: none;
+  }
+
+  span {
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 14px solid $blue-light;
+    display: inline-block;
+    height: 0;
+    margin-right: 6px;
+    vertical-align: sub;
+    width: 0;
+  }
+}
+
+.packages-plans {
+
+  @include tablet-lg {
+    padding-top: 10px;
+    background-color: $white;
+  }
+}
+
+.packages-plans-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  min-height: 293px;
+  text-align: center;
+  align-items: flex-end;
+
+  @include tablet-lg {
+    flex-wrap: nowrap;
+    max-width: 904px;
+  }
+
+  @include desktop {
+    max-width: 990px;
+  }
+}
+
+.packages-plans-more {
+  color: $blue-light;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.packages-features {
+  text-align: center;
+}
+
+.packages-features-list {
+  display: inline-block;
+  margin: auto;
+  text-align: left;
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    max-width: 550px;
+    text-align: center;
+  }
+
+  @include tablet-lg {
+    max-width: 750px;
+  }
+}
+
+.packages-feature-item {
+  margin-bottom: 10px;
+
+  @include tablet {
+    border-left: solid $grey-light 1px;
+    margin-bottom: 0;
+    padding: 0 15px;
+    width: 20%;
+
+    &:last-child {
+      border-right: solid $grey-light 1px;
+    }
+  }
+
+  @include tablet-lg {
+    padding: 0 20px;
+  }
+}
+
+.packages-feature-item-icon {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  width: 30px;
+
+  @include tablet {
+    align-items: center;
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  img {
+    max-height: 20px;
+    max-width: 20px;
+
+    @include tablet {
+      max-width: 30px;
+      max-height: 30px;
+    }
+
+    @include tablet-lg {
+      max-width: 40px;
+      max-height: 40px;
+    }
+  }
+
+
+  @include tablet-lg {
+    height: 50px;
+  }
+}
+
+.packages-feature-item-title {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.125;
+
+  @include tablet {
+    font-size: 12px;
+  }
+
+  @include tablet-lg {
+    display: block;
+    font-size: 14px;
+  }
+}
+
+.packages-faqs {
+  background-color: $grey-lighter;
+  padding: 25px;
+
+  @include tablet {
+    background-color: $white;
+  }
+
+  @include tablet-lg {
+    margin: 0;
+  }
+}
+
+.packages-faqs-title {
+  @include tablet {
+    text-align: center;
+  }
+}
+
+.packages-faqs-list {
+  margin: auto;
+  max-width: 550px;
+
+  @include tablet-lg {
+    max-width: 750px;
+  }
+
+}
+
+.packages-faqs-item {
+  margin-bottom: 30px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.packages-faqs-item-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.packages-heading-general {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.packages-name-general {
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+.packages-labels-general {
+  display: flex;
+  color: $grey;
+
+  span {
+    @include tablet-lg {
+      width: 100px;
+    }
+  }
+
+  .packages-label-new-general {
+    display: none;
+
+    @include tablet-lg {
+      display: inline-block;
+      color: $green;
+      font-weight: 600;
+    }
+  }
+
+  .packages-label-free-general {
+    color: $blue-light;
+    font-weight: 600;
+  }
+
+  .packages-label-time-general {
+    display: none;
+
+    @include tablet-lg {
+      display: inline-block;
+      font-size: 13px;
+      width: auto;
+    }
+  }
+}
+
+.packages-course-general {
+  border-bottom: solid $grey-light 1px;
+  padding: 5px 0;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.packages-sections-general {
+  padding: 0 30p;
+}
+
+.packages-show-for-mobile {
+  @include tablet {
+    display: none;
+  }
+}
+
+.packages-show-for-tablet {
+  display: none;
+
+  @include tablet-only {
+    display: block;
+  }
+}
+
+.packages-show-for-desktop {
+  display: none;
+
+  @include tablet-lg {
+    display: block;
+  }
+}

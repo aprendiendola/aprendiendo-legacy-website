@@ -1,0 +1,17 @@
+@import "../../sass/utils/index";
+
+.teacher-star-ratings-sprite {
+  background: url("../../static/images/star.png") repeat-x;
+  font-size: 0;
+  height: 13px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 65px;
+}
+
+.teacher-star-rating-label {
+  display: block;
+  float: left;
+  height: 13px;
+}

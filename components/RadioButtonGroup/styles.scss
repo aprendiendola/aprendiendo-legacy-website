@@ -1,0 +1,20 @@
+@import "../../sass/utils/index";
+
+.container-radio-button-group {
+
+  @include desktop {
+    position: relative;
+  }
+}
+
+.label-radio-button-group {
+  color: $blue-light;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}

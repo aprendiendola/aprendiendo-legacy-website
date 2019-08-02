@@ -1,0 +1,93 @@
+@import "../../sass/utils/index";
+
+.page-title-login {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+}
+
+.login-general {
+  padding: 20px 15px;
+  height: auto;
+
+  @include tablet {
+    padding: 30px;
+    height: auto;
+    margin: 48px 0;
+  }
+}
+
+.login-email {
+  padding-bottom: 0px;
+
+  @include tablet-lg{
+    padding-bottom: 0px
+  }
+
+  label {
+    font-weight: 600;
+  }
+}
+
+.login-email-title {
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-email-form {
+}
+
+.login-recover-password {
+  text-align: center;
+}
+
+.login-email-action {
+  margin: 20px auto;
+  max-width: 150px;
+}
+
+.login-register {
+  text-align: center;
+}
+
+.login-social {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 130px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+ 
+  @include tablet {
+    height: 159px;
+    flex-direction: row;
+    height: initial;    
+  }
+}
+ 
+
+.login-fb {
+  width: 100%;
+
+  @include tablet{
+    width: 206px;
+    margin-right: 10px;
+  }
+}
+
+.login-gl {
+  width: 100%;
+
+  @include tablet{
+    width: 206px;
+  }
+}

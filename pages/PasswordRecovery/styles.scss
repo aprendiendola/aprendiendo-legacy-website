@@ -1,0 +1,54 @@
+@import "../../sass/utils/index";
+
+.password-recovery-page-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+}
+
+.password-recovery-general {
+  padding: 20px 15px;
+
+  @include tablet {
+    padding: 30px;
+  }
+}
+
+.password-recovery-inner {
+  max-width: 360px;
+  margin: auto;
+}
+
+.password-recovery-email {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  label {
+    font-weight: 600;
+  }
+}
+
+.password-recovery-email-title {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 28px;
+  color: #626262
+}
+
+.password-recovery-email-action {
+  margin: 20px auto;
+  max-width: 150px;
+}
+
+.password-recovery-back-link {
+  margin-top: 10px;
+  text-align: center;
+}
+

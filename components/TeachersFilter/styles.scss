@@ -1,0 +1,19 @@
+@import "../../sass/utils/index";
+
+.teacher-filter {
+  padding: 18px 0;
+}
+
+.teacher-more {
+  color: $blue-light;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.empty-teachers-filter {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  padding: 7px 0;
+}
+

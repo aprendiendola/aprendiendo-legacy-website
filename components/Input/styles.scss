@@ -1,0 +1,47 @@
+@import "../../sass/utils/index";
+
+.container-input {
+  margin-bottom: 5px;
+
+  @include desktop {
+    margin-bottom: 10px;
+    position: relative;
+  }
+}
+
+.label-input {
+  color: $grey-dark;
+  font-size: 14px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.input-general {
+  background: $white;
+  border: 1px solid $grey-light;
+  font-size: 14px;
+  padding: 12px 5px;
+  width: 100%;
+
+  &:focus {
+    outline: 2px solid $blue-light;
+  }
+
+  @include tablet-lg {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.input-general::placeholder {
+  color: $grey-light;
+}
+
+.help-text-input {
+  font-weight: 400;
+}
+
+.error-message-input {
+  color: $red;
+  font-size: 12px;
+}

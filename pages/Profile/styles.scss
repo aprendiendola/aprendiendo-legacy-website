@@ -1,0 +1,175 @@
+@import "../../sass/utils/index";
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+
+  @include tablet-lg {
+    flex-direction: row;
+    padding-top: 40px;
+  }
+
+  @include desktop {
+    justify-content: center;
+  }
+}
+
+.profile-menu {
+  display: none;
+  margin-right: 105px;
+  padding-left: 65px;
+  width: 235px;
+
+  @include tablet-lg {
+    display: block;
+  }
+}
+
+.profile-content {
+  display: flex;
+}
+
+.profile-image {
+  border-radius: 40px;
+  flex-shrink: 0;
+  height: 70px;
+  width: 70px;
+}
+
+.profile-data {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 10px;
+}
+
+.profile-name {
+  line-height: 1em;
+  margin: 0.3em 0;
+}
+
+.picture-button {
+  color: $blue-light;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.items {
+  font-size: 14px;
+  padding-top: 60px;
+}
+
+.item {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  padding: 8px 0;
+  white-space: nowrap;
+  color: #959595;
+
+  &.is-active {
+    color: $blue-light;
+    font-weight: 600;
+  }
+}
+
+.icon-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+  width: 20px;
+}
+
+.icon {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 640px;
+
+  @include mobile {
+    max-width: unset;
+    min-width: 640px;
+
+    &:after {
+      content: "";
+      flex: auto;
+    }
+  }
+
+  @include tablet-lg {
+    margin: 0;
+  }
+
+  @include desktop {
+    min-width: 870px;
+  }
+}
+
+.courses-title {
+  font-size: 16px;
+  font-weight: 900;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 840px;
+  user-select: none;
+  margin-top: 20px;
+
+  @include mobile {
+    font-size: 16px;
+    margin: 0 15px 10px 15px;
+    width: auto;
+  }
+
+  @include tablet-lg {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.empty {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+
+  @include mobile {
+    font-size: 14px;
+    margin: 0 15px;
+    padding-top: 10px;
+  }
+
+  @include desktop {
+    padding-top: 20px;
+  }
+}
+
+.empty-title {
+  font-weight: 600;
+}
+
+.empty-content {
+  padding: 7px 0 30px 0;
+  max-width: 275px;
+
+  @include mobile {
+    padding: 25px 0;
+  }
+}
+
+.button-wrapper {
+  @include mobile {
+    width: 170px;
+  }
+}

@@ -1,0 +1,147 @@
+@import "../../sass/utils/index";
+
+.page-heading-register {
+  text-align: center;
+
+  .page-title-register {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+
+  .page-subtitle-register {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+    @include tablet-lg{
+      text-align: left;
+    }
+  }
+}
+
+.email-label-register {
+  color: #0fa3f4;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.back-text-register {
+  font-size: 14px;
+  color: #0fa3f4;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.register-general {
+  padding: 20px 15px;
+  height: auto;
+
+  @include tablet {
+    padding: 30px 30px 120px;
+    height: auto;
+  }
+
+  @include desktop {
+    padding: 30px;
+    height: auto;
+    margin: 48px 0;
+  }
+
+}
+
+.register-inner {
+  max-width: 365px;
+  margin-bottom: auto;
+  @include tablet{
+    max-width: 436.83px;
+  }
+}
+
+.register-form {
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+
+  label {
+    font-weight: 600;
+  }
+
+  input {
+    padding: 7px 5px;
+  }
+}
+
+.register-fields {
+}
+
+.register-fields-horizontal {
+  display: flex;
+  justify-content: space-between;
+
+  & > div {
+    width: calc(50% - 10px);
+  }
+}
+
+.register-action {
+  margin: 20px auto;
+  max-width: 150px;
+}
+
+.register-login {
+  text-align: center;
+
+  a {
+    font-weight: 600;
+  }
+
+
+  @include tablet-lg{
+    text-align: left;
+  }
+}
+
+.register-error {
+  color:red;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-social-register {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 130px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+ 
+  @include tablet {
+    height: 159px;
+    flex-direction: row;
+    height: initial;    
+  }
+}
+ 
+
+.login-fb-register {
+  width: 100%;
+
+  @include tablet{
+    width: 206px;
+  }
+}
+
+.login-gl-register {
+  width: 100%;
+
+  @include tablet{
+    width: 206px;
+  }
+}

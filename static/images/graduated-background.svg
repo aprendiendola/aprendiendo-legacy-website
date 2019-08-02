@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 915.39 586.47"
+   version="1.1"
+   id="svg560"
+   sodipodi:docname="graduated-background.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata564">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1020"
+     id="namedview562"
+     showgrid="false"
+     inkscape:zoom="0.51137185"
+     inkscape:cx="475.9122"
+     inkscape:cy="455.50318"
+     inkscape:window-x="0"
+     inkscape:window-y="34"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="menú_desplegable_de_carrito" />
+  <defs
+     id="defs9">
+    <style
+       id="style2">.cls-1{fill:url(#linear-gradient);}.cls-14,.cls-2{fill:#00aeef;}.cls-2{opacity:0.33;}.cls-3{fill:#8c8dc8;}.cls-4{fill:#b0b0e2;}.cls-5{fill:#b2b3e3;}.cls-6{fill:#c48fd5;}.cls-7{fill:#fff;}.cls-8{fill:#f3dcf9;}.cls-9{fill:#dddbfa;}.cls-10{fill:#afb1e2;}.cls-11{fill:#ededed;}.cls-12{fill:#babae4;}.cls-13{fill:#4b3f8e;}.cls-15{fill:#dddcfb;}.cls-16{fill:#01408d;}.cls-17{fill:#166fd8;}.cls-18{fill:#0058c2;}.cls-19{fill:#9a0201;}.cls-20{fill:#fc6868;}.cls-21{fill:#fe2525;}.cls-22{fill:#ebb200;}.cls-23{fill:#d49f02;}.cls-24{fill:#f9d008;}.cls-25{fill:#eee4cb;}.cls-26{fill:#00a0d1;}.cls-27{fill:#00779b;}.cls-28{fill:#fcf7eb;}.cls-29{fill:#e2d8bd;}.cls-30{fill:#d02c5f;}.cls-31{fill:#ac2956;}.cls-32{fill:#ed497c;}.cls-33{fill:#0d85d6;}.cls-34{fill:#df337d;}.cls-35{fill:#ff65a7;}.cls-36{fill:#b1cbda;}.cls-37{fill:#dae7ef;}.cls-38{fill:#f6fbfe;}.cls-39{fill:#67aaf9;}.cls-40{fill:#5771f4;}.cls-41{fill:#3e51b0;}.cls-42{fill:#788dfd;}.cls-43{fill:#3794dc;}</style>
+    <linearGradient
+       id="linear-gradient"
+       x1="137.83"
+       y1="390.62"
+       x2="921.83"
+       y2="50.62"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#68b7c1"
+         id="stop4" />
+      <stop
+         offset="1"
+         stop-color="#7edfb5"
+         id="stop6" />
+    </linearGradient>
+  </defs>
+  <title
+     id="title11">Artboard 121 copy</title>
+  <g
+     id="menú_desplegable_de_carrito"
+     data-name="menú desplegable de carrito">
+    <path
+       class="cls-1"
+       d="M67.39,0S21.72,67.16,45.05,132.58s60.67,85.25,161,122.5,189.57,57.61,283,104.64c58.38,29.39,94.83,70.95,119.66,130.16C621,519.16,661.7,547,700.05,547c102,0,215.34-88.67,215.34-88.67V0Z"
+       id="path13" />
+    <circle
+       class="cls-2"
+       cx="62.54"
+       cy="159.65"
+       r="59.95"
+       id="circle15" />
+    <circle
+       class="cls-2"
+       cx="799.29"
+       cy="535.46"
+       r="46.25"
+       id="circle17" />
+  </g>
+</svg>

@@ -1,0 +1,244 @@
+@import "../../sass/utils/index";
+
+.lesson-list-modal-content {
+  background-color: $white;
+  bottom: 0;
+  color: $black;
+  left: 0;
+  margin: auto;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  @include tablet-lg {
+    overflow: auto;
+    min-height: 568px;
+    position: relative;
+  }
+}
+
+.lesson-list-title-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: center;
+  padding: 28px 15px 9px;
+
+  @include tablet {
+    font-size: 22px;
+  }
+
+  @include tablet-lg {
+    padding: 28px 48px 9px;
+  }
+}
+
+.lesson-list-title {
+  font-size: 16px;
+
+  @include tablet-lg {
+    font-size: 20px;
+  }
+}
+
+.lesson-list-subtitle {
+  font-size: 12px;
+  font-weight: 500;
+
+  &:first-letter {
+    text-transform: capitalize;
+  }
+
+  @include tablet-lg {
+    font-size: 14px;
+  }
+}
+
+.lesson-list-close-modal {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  width: 14px;
+  z-index: 1;
+}
+
+.lesson-list-content-wrapper {
+  height: 480px;
+  overflow-y: scroll;
+  padding: 0 15px 20px;
+
+  @include tablet-lg {
+    padding: 0 50px 50px;
+  }
+}
+
+.lesson-list-course-title {
+  font-weight: bold;
+}
+
+.lesson-list-pack-wrapper {
+  padding: 3px 0;
+
+  @include tablet-lg {
+    padding: 10px 0;
+  }
+
+  &:first-child {
+    padding: 0;
+  }
+}
+
+.lesson-list-pack {
+  font-size: 12px;
+  font-weight: 600;
+
+  @include tablet-lg {
+    font-size: 14px;
+  }
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 530px;
+  padding: 0 15px;
+}
+
+.lesson-list-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.lesson-list-link-wrapper {
+  color: $black;
+}
+
+.lesson-list-name {
+  font-weight: 600;
+  padding-right: 20px;
+  font-size: 12px;
+
+  @include tablet-lg {
+    font-size: 14px;
+  }
+}
+
+.lesson-list-labels {
+  display: flex;
+  color: $grey;
+
+  span {
+    font-size: 10px;
+
+    @include tablet-lg {
+      font-size: 14px;
+      width: 100px;
+    }
+  }
+
+  .lesson-list-label-new {
+    display: none;
+
+    @include tablet-lg {
+      display: inline-block;
+      color: $green;
+      font-weight: 600;
+    }
+  }
+
+  .lesson-list-label-free {
+    color: $blue-light;
+    font-weight: 600;
+  }
+
+  .lesson-list-label-time {
+    display: none;
+
+    @include tablet-lg {
+      display: inline-block;
+      font-size: 13px;
+      width: 45px;
+      text-align: right;
+    }
+  }
+}
+
+.lesson-list-course {
+  border-bottom: solid $grey-light 1px;
+  font-size: 10px;
+  overflow: hidden;
+  padding: 5px 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  &:hover::before {
+    border-bottom: 4px solid transparent;
+    border-left: 8px solid $blue-light;
+    border-top: 4px solid transparent;
+    content: "";
+    display: none;
+    left: -21px;
+    position: absolute;
+    top: 8px;
+    z-index: 3;
+
+    @include tablet {
+      display: block;
+    }
+  }
+}
+
+.lesson-list-course-wrapper {
+  position: relative;
+}
+
+.lesson-list-content {
+  padding: 0 22px;
+}
+
+.lesson-list-loading-wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  min-height: 568px;
+}
+
+.lesson-list-loading {
+  width: 50px;
+}
+
+.lesson-list-evaluations {
+}
+
+.lesson-list-evaluations-block {
+  margin-bottom: 30px;
+  @include tablet-lg {
+    width: 550px;
+  }
+  @include desktop {
+    width: 660px;
+  }
+}
+
+.lesson-list-evaluations-title {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}

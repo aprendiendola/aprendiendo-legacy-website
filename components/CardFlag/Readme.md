@@ -1,0 +1,3 @@
+```jsx
+<CardFlag type="new"/>
+```

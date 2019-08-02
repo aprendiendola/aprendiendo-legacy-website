@@ -1,0 +1,239 @@
+@import "../../sass/utils/index";
+
+.videoplayer-container {
+  @include tablet-lg {
+    height: calc(100vh - 44px);
+  }
+}
+
+.title-bar {
+  background: $black;
+  color: $white;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 13px 0 10px 13px;
+  width: 100%;
+}
+
+.player-section {
+  background-color: $black-bis;
+
+  @include tablet-lg {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
+.player-wrapper {
+  padding: 10px;
+  position: relative;
+
+  @include tablet-lg {
+    width: calc(97% - 300px);
+  }
+
+  @include desktop{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+}
+
+.video-wrapper {
+  display: flex;
+  padding: 50% 0 0 0;
+  position: relative;
+}
+
+.video {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.menu-wrapper {
+  padding: 10px;
+  margin-bottom: 10px;
+
+  @include tablet-lg {
+    padding-left: 0;
+    width: 300px;
+    overflow: hidden;
+    height: 395px;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 526px;
+  }
+  @include desktop-lg {
+    height: 850px;
+  }
+}
+
+.tests-select {
+  appearance: none;
+  background-position: 98% !important;
+  background-size: 13px !important;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  height: 30px;
+  margin: 0;
+  padding: 0 5px;
+  width: 100%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  &[disabled] {
+    background-color: $grey-lighter;
+  }
+
+  option {
+    padding: 5px 0;
+  }
+
+  @include tablet-lg {
+    font-size: 14px;
+    padding: 0 13px;
+  }
+}
+
+.videoplayer-menu {
+  background: $black;
+  color: $white;
+  font-size: 12px;
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 120px;
+  position: relative;
+  top: 10px;
+
+  @include mobile-tablet-only {
+    height: 400px;
+  }
+}
+
+.videoplayer-menu::-webkit-scrollbar {
+  width: 3px;
+}
+
+.videoplayer-menu::-webkit-scrollbar-track {
+  background: #56575b;
+}
+
+.videoplayer-menu::-webkit-scrollbar-thumb {
+  background: #07a3f4;
+}
+
+.videoplayer-item {
+  border-bottom: 1px solid #282828;
+  border-top: 1px solid #57585b;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.item-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+}
+
+.videoplayer-is-active {
+  background: $grey-dark;
+  position: relative;
+  &::before {
+    border-bottom: 7px solid transparent;
+    border-left: 13px solid #07a1fb;
+    border-top: 7px solid transparent;
+    content: "";
+    display: none;
+    left: 14px;
+    position: absolute;
+    top: 9px;
+    z-index: 3;
+
+    @include tablet {
+      display: block;
+    }
+  }
+}
+
+.item-lesson {
+  align-items: center;
+  color: $white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px 8px 34px;
+  position: relative;
+
+  &:hover {
+    background: $grey-dark;
+    color: $white;
+  }
+
+  &.is-inactive {
+    color: $grey;
+  }
+}
+
+.lesson-title {
+  color: $blue-light;
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+.extra-info {
+  font-size: 10px;
+}
+
+.buyIt {
+  &:hover {
+    color: #07a1fb !important;
+  }
+}
+
+.info-section {
+  font-size: 14px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.comments-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.description-title {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+  padding: 23px;
+}
+
+.subject {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 195px;
+}

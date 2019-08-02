@@ -1,0 +1,35 @@
+@import "../../sass/utils/index";
+
+.container-paginator {
+  align-items: center;
+  display: flex;
+  float: right;
+  justify-content: flex-end;
+  padding-top: 15px;
+  max-width: 320px;
+
+  @include mobile {
+    margin: 0 15px;
+  }
+}
+
+.page-paginator {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+  height: 25px;
+  justify-content: center;
+  margin: 5px;
+  min-width: 25px;
+  user-select: none;
+
+  &.is-active-paginator {
+    background: $blue-light;
+    color: $white;
+  }
+}
+
+.arrow-paginator {
+  cursor: pointer;
+}

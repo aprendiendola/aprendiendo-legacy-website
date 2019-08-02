@@ -1,0 +1,45 @@
+@import "../../sass/utils/index";
+
+.container-select {
+  margin-bottom: 5px;
+
+  @include desktop {
+    margin-bottom: 10px;
+    position: relative;
+  }
+}
+
+.label-select {
+  color: $grey-dark;
+  font-size: 14px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.select-general {
+  background: $white;
+  border: 1px solid $grey-light;
+  font-size: 14px;
+  height: 35px;
+  margin: 0;
+  padding: 0 5px;
+  width: 100%;
+
+  &[disabled] {
+    background-color: $grey-lighter;
+  }
+
+  option {
+    padding: 5px 0;
+  }
+
+  @include tablet-lg {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+.error-message-select {
+  color: $red;
+  font-size: 12px;
+}

@@ -1,0 +1,64 @@
+@import "../../sass/utils/index";
+
+.container-radio-button {
+  margin-bottom: 5px;
+
+  @include desktop {
+    margin-bottom: 2px;
+    position: relative;
+  }
+}
+
+.label-radio-button {
+  color: $black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 20px;
+  position: relative;
+
+  &:before {
+    background: $white;
+    border: 1px solid $grey;
+    border-radius: 100%;
+    content: '';
+    height: 13px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    width: 13px;
+  }
+
+  &:after {
+    background: $blue-light;
+    border-radius: 100%;
+    content: '';
+    height: 7px;
+    left: 3px;
+    position: absolute;
+    top: 5px;
+    width: 7px;
+  }
+}
+
+.radio-radio-button {
+  display: none;
+  position: absolute;
+
+  &:not(:checked) {
+    &+ .label-radio-button {
+      &:after {
+          opacity: 0;
+      }
+    }
+  }
+
+  &:checked {
+    &+ .label-radio-button {
+      &:after {
+          opacity: 1;
+      }
+    }
+  }
+}

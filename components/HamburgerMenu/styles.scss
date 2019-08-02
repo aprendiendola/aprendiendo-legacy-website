@@ -1,0 +1,16 @@
+@import "../../sass/utils/index";
+
+.hamburger-menu {
+  cursor: pointer;
+  left: 1em;
+  mix-blend-mode: undefined;
+  object-fit: contain;
+  position: absolute;
+  width: 14px;
+  padding-bottom: 3px;
+
+  @include tablet-forced-header {
+    margin-right: 1.5em;
+    position: relative;
+  }
+}

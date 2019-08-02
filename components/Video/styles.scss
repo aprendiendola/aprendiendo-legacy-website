@@ -1,0 +1,46 @@
+@import "../../sass/utils/index";
+
+.margin-color-video {
+  padding: 0 15px;
+  background-color: #414042;
+
+  @include tablet {
+    background-color: #414042;
+    padding: 0 6%;
+  }
+
+  @include tablet-lg {
+    height: 311px;
+  }
+
+  @include desktop {
+    height: 426px;
+    padding: 0 66px;
+  }
+}
+
+.video-wrapper-general {
+  display: flex;
+  padding:56.25% 0 0 0;
+  position:relative;
+
+  @include tablet-lg {
+    padding: 28.25% 0 0 0;
+  }
+}
+
+.video-general {
+  height:100%;
+  left:0;
+  position:absolute;
+  top:0;
+  width:100%;
+  @include tablet-lg {
+    height: 255px;
+    padding-right: 523px;
+  }
+  @include desktop {
+    height: 352px;
+    padding-right: 523px;
+  }
+}

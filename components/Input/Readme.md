@@ -1,0 +1,3 @@
+```jsx
+  <Input placeholder="Type" />
+```

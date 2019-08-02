@@ -1,0 +1,39 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "preprocess": false,
+        "displayName": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ".",
+        "alias": {
+          "components": "./components",
+          "routes": "./routes",
+          "lib": "./lib",
+          "styles": "./styles",
+          "utils": "./utils",
+          "constants": "./constants.js",
+          "services": "./services",
+          "static": "./static",
+          "assets": "./static",
+          "reducers": "./reducers"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "development": {
+      "plugins": ["inline-dotenv"]
+    },
+    "production": {
+      "plugins": ["transform-inline-environment-variables"]
+    }
+  }
+}

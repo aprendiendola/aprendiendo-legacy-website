@@ -1,0 +1,82 @@
+@import "../../sass/utils/index";
+
+.university-filter {
+  padding: 18px 0;
+
+  &.university-has-border-bottom {
+    border-bottom: 1px solid $grey;
+  }
+}
+
+.university-more {
+  color: $blue-light;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.university-select-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.university-select-title {
+  font-size: 13px;
+  padding: 7px 3px;
+  width: 290px;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.university-select-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @include mobile {
+    justify-content: space-between;
+  }
+}
+
+.university-select-button {
+  padding-left: 17px;
+  font-size: 14px;
+  color: $blue-light;
+  font-weight: bold;
+}
+
+.fixed-filter{
+  width: 290px;
+  text-align: right;
+  line-height: 42px;
+  @include tablet {
+    width: 100%;
+  }
+
+}
+
+.university-select {
+  color: $grey;
+  background: $white;
+  border: 1px solid $grey-light;
+  font-size: 12px;
+  padding: 6px;
+  width: 175px;
+
+  &:focus {
+    outline: 1px solid $blue-light;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    width: 260px;
+  }
+}

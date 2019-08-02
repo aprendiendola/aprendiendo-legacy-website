@@ -1,0 +1,216 @@
+@import "../../sass/utils/index";
+
+.search-container {
+
+}
+
+.search-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0 60px 0;
+
+  @include desktop {
+    flex-direction: row;
+    padding-top: 40px;
+  }
+}
+
+.search-filters-mobile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.search-filters-mobile-title {
+  font-size: 13px;
+  padding: 7px 3px;
+  width: 290px;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.search-filters-mobile-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @include mobile {
+    justify-content: space-between;
+  }
+}
+
+.search-filter-button {
+  padding-left: 17px;
+  font-size: 14px;
+  color: $blue-light;
+  font-weight: bold;
+}
+
+.search-university-select {
+  color: $grey;
+  background: $white;
+  border: 1px solid $grey-light;
+  font-size: 12px;
+  padding: 6px;
+  width: 231px;
+
+  &:focus {
+    outline: 1px solid $blue-light;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    width: 260px;
+  }
+}
+
+.search-filters {
+  display: none;
+  margin-right: 35px;
+  width: 235px;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.search-filters-title {
+  border-bottom: 1px solid $grey;
+  font-weight: bold;
+  width: 100%;
+}
+
+.search-filters-top {
+
+}
+
+.search-filter {
+  padding: 18px 0;
+
+  &.has-border-bottom {
+    border-bottom: 1px solid $grey;
+  }
+}
+
+.search-more {
+  color: $blue-light;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-not-found {
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  height: 40vh;
+  margin: 15px;
+  width: 100%;
+
+  @include desktop {
+    font-size: 16px;
+  }
+}
+
+.search-not-found-title {
+  color: #ff8671;
+}
+
+.search-not-found-list {
+  font-size: 14px;
+  list-style-type: disc;
+  padding: 13px 15px;
+  text-align: left;
+}
+
+.search-empty-teachers {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  padding: 7px 0;
+}
+
+.search-empty {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  height: 40vh;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+  @include tablet {
+    min-width: 640px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+  }
+
+  &.search-is-list {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.search-courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 640px;
+
+  @include mobile {
+    &:after {
+      content: "";
+      flex: auto;
+    }
+  }
+
+  @include desktop {
+    max-height: initial;
+  }
+
+  @include desktop {
+    margin: 0;
+    min-width: 870px;
+  }
+}
+
+.search-user-courses {
+  display: none;
+  padding-bottom: 20px;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.search-user-title {
+  border-bottom: 1px solid $grey;
+  display: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 840px;
+  user-select: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.search-user-link {
+  color: $blue-light;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 10px;
+}

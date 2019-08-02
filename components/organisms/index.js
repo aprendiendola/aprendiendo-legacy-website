@@ -1,0 +1,12 @@
+export { default as Main } from "./main";
+export { default as Learn } from "./learn";
+export { default as ChooseUniversity } from "./chooseUniversity";
+export { default as Feedback } from "./feedback";
+export { default as Award } from "./awards";
+export { default as BecomeTeacher } from "./becomeTeacher";
+export { default as Contact } from "./contact";
+export { default as SubscriptionPlans } from "./subscriptionPlans";
+export { default as NpsModal } from "./NpsModal";
+export { default as Referrals } from "./referrals";
+export { default as MobileFilters } from "./MobileFilters";
+export { default as PackageSelector } from "./PackageSelector";

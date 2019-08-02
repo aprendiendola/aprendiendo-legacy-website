@@ -1,0 +1,90 @@
+@import "../../sass/utils/index";
+
+.about-teacher-information {
+  color: #414042;
+  font-size: 16px;
+  font-stretch: condensed;
+  font-style: normal;
+  font-weight: bold;
+  height: 17px;
+  letter-spacing: normal;
+  line-height: 1.65;
+  mix-blend-mode: undefined;
+  object-fit: contain;
+  text-align: left;
+  text-transform: uppercase;
+  width: 176px;
+
+  @include tablet{
+    font-size: 20px;
+  }
+}
+
+.image-teacher-information {
+  border-radius: 40px;
+  height: 60px;
+  width: 60px;
+
+  @include tablet {
+    height: 60px;
+    width: 60px
+  }
+}
+
+.name-teacher-information {
+  color: #414042;
+  font-family: Lato;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  height: 13px;
+  letter-spacing: normal;
+  line-height: 1.29;
+  mix-blend-mode: undefined;
+  object-fit: contain;
+  text-align: left;
+  width: 94px;
+
+  @include tablet{
+    font-size: 14px;
+  }
+}
+
+.information-teacher-general {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 1em;
+}
+
+.left-space-teacher-information {
+  max-width: 70%;
+  margin-left: 1em;
+  @include tablet{
+    max-width: 87%;
+  }
+  @include tablet-lg{
+    max-width: 679px;
+  }
+}
+
+.description-teacher-information {
+  color: #626262;
+  font-family: Lato;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-top: 1em;
+  mix-blend-mode: undefined;
+  object-fit: contain;
+  line-height: 22px;
+  text-align: left;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+}

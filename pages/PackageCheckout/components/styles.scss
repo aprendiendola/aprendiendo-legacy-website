@@ -1,0 +1,43 @@
+@import "../../../sass/utils/index";
+
+.checkout-components-container {
+  margin-bottom: 5px;
+
+  @include desktop {
+    margin-bottom: 10px;
+    position: relative;
+  }
+}
+
+.checkout-components-label {
+  color: $grey-dark;
+  font-size: 14px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.checkout-components-input {
+  background: $white;
+  border: 1px solid $grey-light;
+  font-size: 14px;
+  padding: 12px 5px;
+  width: 100%;
+
+  &:focus {
+    outline: 2px solid $blue-light;
+  }
+
+  @include tablet-lg {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.checkout-components-help-text {
+  font-weight: 400;
+}
+
+.checkout-components-error-message {
+  color: $red;
+  font-size: 12px;
+}

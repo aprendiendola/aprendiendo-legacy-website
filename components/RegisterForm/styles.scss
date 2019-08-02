@@ -1,0 +1,47 @@
+@import "../../sass/utils/index";
+
+.register-form {
+  background-color: $white;
+  label {
+    font-weight: 600;
+  }
+
+  input {
+    padding: 7px 5px;
+  }
+}
+
+.register-fields-form {
+}
+
+.register-fields-horizontal-form {
+  display: flex;
+  justify-content: space-between;
+
+  & > div {
+    width: calc(50% - 10px);
+  }
+}
+
+.register-login-form {
+  text-align: center;
+
+  a {
+    font-weight: 600;
+  }
+}
+
+.register-action-form {
+  margin: 20px auto;
+  button {
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.register-error-form {
+  color:red;
+  font-size: 14px;
+  text-align: center;
+}

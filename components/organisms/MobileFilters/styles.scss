@@ -1,0 +1,181 @@
+@import "../../../sass/utils/index";
+
+
+.container-sidenav {
+  height: 100vh;
+  width: 100%;
+  background-color: $white;
+}
+
+.courses-option-sidenav {
+  align-items: center;
+  border-bottom: 1px $grey solid;
+  color: #626262;
+  display: flex;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  width: 100%;
+
+  span{
+    cursor: pointer;
+  }
+
+  a{
+    color: #626262;
+  }
+}
+
+.link-sidenav {
+  margin-top: 29px;
+  height: 13px;
+  white-space: nowrap;
+  width: 146px;
+
+  &:first-child{
+    margin-top: 0px;
+  }
+
+  a{
+    color: #626262;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left;
+  }
+}
+
+.links-option-sidenav {
+  padding: 18px 16px;
+}
+
+.name-user-sidenav {
+  align-items: center;
+  color: #626262;
+  display: flex;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+
+.profile-option-sidenav {
+  align-items: center;
+  border-bottom: 1px $grey solid;
+  display: flex;
+  padding: 20px 14px;
+
+  a{
+    color: #0fa3f4;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    width: 48px;
+  }
+}
+
+.user-profile-sidenav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 6px;
+}
+
+.signIn-option-sidenav {
+  align-items: center;
+  border-bottom: 1px solid $grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+
+.signin-button-sidenav {
+  align-items: center;
+  border: 1px solid #1178f2;
+  border-radius: 25px;
+  display: flex;
+  margin: 5px 0;
+  height: 44px;
+  justify-content: center;
+  width: 162px;
+
+  span{
+    align-items: center;
+    color: #1178f2;
+    display: flex;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    line-height: 1.38;
+    height: 11px;
+  }
+}
+.signup-button-sidenav {
+  align-items: center;
+  background-color: #1178f2;
+  border-radius: 25px;
+  color: $white;
+  display: flex;
+  margin: 8px 0;
+  height: 40px;
+  justify-content: center;
+  width: 162px;
+
+  span{
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    height: 15px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    line-height: 1.38;
+    width: 84%;
+  }
+}
+
+.sidenav-wrapper-general{
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+  left: 0px;
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  visibility: hidden;
+  z-index: 4;
+  width: 100%;
+
+  @include desktop{
+    display: none
+  }
+}
+
+.sidenav-wrapper-general.active-sidenav {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s 0s, visibility 0s 0s;
+}

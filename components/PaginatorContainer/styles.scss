@@ -1,0 +1,11 @@
+@import "../../sass/utils/index";
+
+.paginator-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    align-items: flex-end;
+  }
+}

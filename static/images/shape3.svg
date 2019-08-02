@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="592.407" height="732.265" viewBox="0 0 592.407 732.265">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.34" x2="1.052" y2="1.036" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4e87d0"/>
+      <stop offset="1" stop-color="#7edfb5"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_1570" data-name="Grupo 1570" transform="translate(10469.977 75)">
+    <path id="Trazado_2837" data-name="Trazado 2837" d="M4803.071,2483.378c-89.546-29.827-126.368-82.071-84.545-168.615s331.3-150.016,375.36-321.9,393.964,340.626,296.274,484.556S4892.617,2513.205,4803.071,2483.378Z" transform="translate(-12428 5358.588) rotate(-90)" fill="url(#linear-gradient)"/>
+    <circle id="Elipse_231" data-name="Elipse 231" cx="60" cy="60" r="60" transform="translate(-10042 525)" fill="#0fa3f4" opacity="0.33"/>
+    <circle id="Elipse_230" data-name="Elipse 230" cx="47" cy="47" r="47" transform="translate(-10017 -75)" fill="#0fa3f4" opacity="0.33"/>
+  </g>
+</svg>

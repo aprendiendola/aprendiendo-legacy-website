@@ -1,0 +1,44 @@
+@import "../../../sass/utils/index";
+
+.checkout-input-container {
+  margin-bottom: 5px;
+
+  @include desktop {
+    margin-bottom: 10px;
+    position: relative;
+  }
+}
+
+.checkout-input-label {
+  color: $grey-dark;
+  font-size: 14px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.checkout-input {
+  background: $white;
+  border: 1px solid $grey-light;
+  font-size: 14px;
+  padding: 12px 5px;
+  width: 100%;
+  color: #363636;
+
+  &:focus {
+    outline: 2px solid $blue-light;
+  }
+
+  @include tablet-lg {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.checkout-help-text {
+  font-weight: 400;
+}
+
+.checkout-error-message {
+  color: $red;
+  font-size: 12px;
+}

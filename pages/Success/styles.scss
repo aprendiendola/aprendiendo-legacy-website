@@ -1,0 +1,70 @@
+@import "../../sass/utils/index";
+
+.success-wrapper {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+  font-size: 14px;
+
+  a {
+    color: $blue;
+  }
+}
+
+.heading-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+
+  @include tablet-lg {
+    font-size: 20px;
+  }
+}
+
+.heading-subtitle {
+  font-size: 12px;
+
+  @include tablet-lg {
+    font-size: 14px;
+  }
+}
+
+.success-heading {
+  margin-bottom: 88px;
+
+  @include tablet-lg {
+    margin-bottom: 55px;
+  }
+}
+
+.success-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+
+  @include tablet-lg {
+    width: 300px;
+  }
+}
+
+.success-logo {
+  width: 285px;
+}
+
+.success-message {
+  font-size: 12px;
+  padding: 20px 0;
+
+  @include tablet-lg {
+    font-size: 14px;
+  }
+}
+
+.button-wrapper {
+  width: 170px;
+}

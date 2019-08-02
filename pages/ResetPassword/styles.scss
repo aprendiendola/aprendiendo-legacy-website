@@ -1,0 +1,58 @@
+@import "../../sass/utils/index";
+
+.reset-password-page-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+}
+
+.reset-password-general {
+  padding: 20px 15px;
+
+  @include tablet {
+    padding: 30px;
+  }
+}
+
+.reset-password-inner {
+  max-width: 360px;
+  margin: auto;
+}
+
+.reset-password-email {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  label {
+    font-weight: 600;
+  }
+}
+
+.reset-password-email-title {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 28px;
+  color: #626262
+}
+
+.reset-password-recover-password {
+  text-align: center;
+}
+
+.reset-password-email-action {
+  margin: 20px auto;
+  max-width: 150px;
+}
+
+.reset-password-back-link {
+  margin-top: 10px;
+  text-align: center;
+}
+

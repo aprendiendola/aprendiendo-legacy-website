@@ -1,0 +1,139 @@
+@import "../../sass/utils/index";
+
+.condition-container{
+  margin: 40px;
+  align-items: center;
+  flex-direction: column;
+  @include tablet{
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto;
+    text-align: justify;
+    max-width: 1280px;
+    align-items: baseline;
+  }
+ }
+
+.condition-title-content{
+    margin: 25px 0px 10px;
+}
+
+
+ .condition-viewContent{
+   @include tablet{
+    width: 80%;
+   }
+ }
+
+ .condition-listContent{
+   display: none;
+   @include tablet{
+    display:flex;
+    width:20%;
+   }
+ }
+
+ .condition-listContent ul{
+    margin-top: 43px
+ }
+
+ .condition-listContent ul li{
+    padding: 6px 6px;
+    border: 1px solid #ddd;
+    color: #000;
+    width: 183px;
+    margin-bottom: 8px;
+    cursor: pointer;
+ }
+
+.condition-listContent ul .condition-active{
+    padding: 6px 6px;
+    background: #31a3f4;
+    color: #fff;
+    width: 183px;
+    margin-bottom: 8px }
+
+.condition-image-expiration {
+  height: 183px;
+  mix-blend-mode: undefined;
+  object-fit: contain;
+  width: 183px;
+
+
+  @include tablet {
+    height: 286px;
+    width: 286px;
+  }
+}
+
+.condition-title-expiration{
+  color: #414042;
+  font-size: 20px;
+  font-stretch: condensed;
+  font-style: normal;
+  font-weight: bold;
+  height: 20px;
+  letter-spacing: normal;
+  line-height: 1.65;
+  margin-top: 34px;
+  white-space: nowrap;
+
+  @include tablet {
+    margin-top: 39px;
+    margin-bottom: 20px;
+  }
+
+}
+
+.condition-text-content{
+  line-height: 32px;
+}
+
+.condition-line{
+    display:none;
+    @include tablet{
+      width: 39px;
+      background: #31a3f4;
+      height: 7px;
+      display: flex;
+      margin-bottom: 39px
+    }
+}
+
+.condition-subtitle-expiration{
+  color: #414042;
+  font-family: Lato;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  height: 10px;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-top: 20px;
+
+  @include desktop {
+    height: 13px;
+  }
+}
+
+.condition-link-expiration{
+  background-color: $blue-light;
+  border-radius: 25px;
+  color: $white;
+  font-family: Lato;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 35px;
+  letter-spacing: normal;
+  line-height: 35px;
+  margin-top: 27px;
+  text-align: center;
+  width: 170px;
+
+  &:hover{
+    color: $white;
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../sass/utils/index";
+
+.badge-general{
+  background-color: #00ACF0;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+  height: 16px;
+  position: absolute;
+  right: -9px;
+  text-align: center;
+  top: -6px;
+  width: 16px;
+}
+
+.badge-wrapper-general {
+  justify-content: flex-end;
+  mix-blend-mode: undefined;
+  object-fit: contain;
+  position: relative;
+  width: 23px;
+  height: 23px;
+  right: -8px;
+  margin-top: 5px;
+}

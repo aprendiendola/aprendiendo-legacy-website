@@ -1,0 +1,25 @@
+@import "../../sass/utils/index";
+
+.container-card-flag {
+  align-items: center;
+  color: $white;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 7px;
+  width: 65px;
+  z-index: 0;
+
+  @include desktop {
+    top: 12px;
+  }
+}
+
+.title-card-flag {
+  font-size: 14px;
+  font-weight: 900;
+  position: relative;
+  top: 1px;
+}

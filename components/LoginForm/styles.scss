@@ -1,0 +1,18 @@
+@import "../../sass/utils/index";
+
+.login-email-form {
+}
+
+.login-recover-password-form {
+  text-align: center;
+}
+
+.login-email-action-form {
+  margin: 20px auto;
+  width: 100%;
+  button {
+    &:hover {
+      color: #fff;
+    }
+  }
+}

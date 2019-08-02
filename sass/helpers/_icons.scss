@@ -1,0 +1,124 @@
+%icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.prev-icon {
+  @extend %icon;
+  background-image: url("~assets/images/left-gray-arrow.svg");
+  height: 20px;
+  min-width: 25px;
+}
+
+.next-icon {
+  @extend %icon;
+  background-image: url("~assets/images/right-gray-arrow.svg");
+  height: 20px;
+  min-width: 25px;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("~assets/fonts/Icomoon/icomoon.eot?dg41iw");
+  src: url("~assets/fonts/Icomoon/icomoon.eot?dg41iw#iefix")
+      format("embedded-opentype"),
+    url("~assets/fonts/Icomoon/icomoon.ttf?dg41iw") format("truetype"),
+    url("~assets/fonts/Icomoon/icomoon.woff?dg41iw") format("woff"),
+    url("~assets/fonts/Icomoon/icomoon.svg?dg41iw#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-aprendiendo-rocket:before {
+  content: "\e90a";
+  color: #969696;
+}
+
+.icon-aprendiendo-close:before {
+  content: "\e906";
+  color: #d1d3d4;
+  font-size: 12px;
+}
+.icon-aprendiendo-cart:before {
+  content: "\e900";
+  color: #969696;
+}
+.icon-aprendiendo-eye:before {
+  content: "\e901";
+  color: #fff;
+  font-size: 11px;
+}
+.icon-aprendiendo-hamburger:before {
+  content: "\e902";
+  color: #0fa3f4;
+  font-size: 13px;
+}
+.icon-aprendiendo-search:before {
+  content: "\e911";
+  color: #0fa3f4;
+}
+.icon-Icono-azul-Campana:before {
+  content: "\e907";
+  color: #0fa3f4;
+}
+.icon-Icono-azul-Reloj:before {
+  content: "\e908";
+  color: #0fa3f4;
+}
+.icon-Icono-azul-Tarjeta:before {
+  content: "\e909";
+  color: #0fa3f4;
+}
+.icon-Icono-azul-User:before {
+  content: "\e903";
+  color: #0fa3f4;
+}
+.icon-Icono-azul-Video:before {
+  content: "\e904";
+  color: #0fa3f4;
+}
+.icon-aprendiendo-padlock:before {
+  content: "\e912";
+  color: #969696;
+}
+.icon-Icono-Candado:before {
+  content: "\e905";
+  color: #0fa3f4;
+}
+.icon-aprendiendo-bell:before {
+  content: "\e916";
+  color: #969696;
+}
+.icon-aprendiendo-clock:before {
+  content: "\e917";
+  color: #969696;
+}
+.icon-aprendiendo-card:before {
+  content: "\e915";
+  color: #969696;
+}
+.icon-aprendiendo-user:before {
+  content: "\e914";
+  color: #969696;
+}
+.icon-aprendiendo-video:before {
+  content: "\e913";
+  color: #969696;
+}

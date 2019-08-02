@@ -1,0 +1,13 @@
+@import "../../sass/utils/index";
+
+.category-filter {
+  padding: 18px 0;
+
+  @include tablet {
+    padding: 30px 0 25px 0;
+  }
+
+  @include desktop {
+    padding: 18px 0;
+  }
+}

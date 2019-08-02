@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 869.625 875.317">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #0fa3f4;
+        opacity: 0.33;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.34" x2="1.052" y2="1.036" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4e87d0"/>
+      <stop offset="1" stop-color="#7edfb5"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1353" data-name="Group 1353" transform="translate(-1001.59 -7.373)">
+    <path id="Path_2580" data-name="Path 2580" class="cls-1" d="M4803.071,2483.378s-68.737-89.452-30.844-202.644,277.6-115.987,321.659-287.871,393.964,340.626,296.274,484.556S4897.89,2628.741,4803.071,2483.378Z" transform="translate(2009.541 5984.701) rotate(-120)"/>
+    <circle id="Ellipse_77" data-name="Ellipse 77" class="cls-2" cx="45.057" cy="45.057" r="45.057" transform="translate(1230.236 153.313)"/>
+    <circle id="Ellipse_80" data-name="Ellipse 80" class="cls-2" cx="33.057" cy="33.057" r="33.057" transform="translate(1108.236 529.313)"/>
+  </g>
+</svg>

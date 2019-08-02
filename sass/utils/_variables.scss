@@ -1,0 +1,69 @@
+/* Colors */
+
+$black-bis:    #282828 !default;
+$black-ter:    hsl(0, 0%, 14%) !default;
+
+$white-ter:    hsl(0, 0%, 96%) !default;
+$white-bis:    hsl(0, 0%, 98%) !default;
+
+$turquoise:    hsl(171, 100%, 41%) !default;
+
+$blue:         hsl(217, 71%,  53%) !default;
+$blue-light:   #07a1fb !default;
+
+$purple:       hsl(271, 100%, 71%) !default;
+
+$black:        #333333 !default;
+
+$grey-lighter: #f4f4f4 !default;
+$grey-light:   #e5e7e4 !default;
+$grey:         #959697 !default;
+$grey-dark:    #626262 !default;
+$grey-darker:  #414143 !default;
+
+$red:          #ec314c !default;
+$orange:       #ff761b !default;
+$yellow:       #f5ffbd !default;
+$green:        #6DE124 !default;
+$white:        #ffffff !default;
+$melon:        rgb(255, 109, 91);
+
+/* Social */
+
+$fb: #4267b2;
+
+/* Brand */
+
+$primary: $turquoise !default;
+
+$info: $blue !default;
+$success: $green !default;
+$warning: $yellow !default;
+$danger: $red !default;
+
+$light: $white-ter !default
+$dark: $grey-darker !default
+
+
+/* Responsiveness */
+$mobile-sm: 320px !default
+$mobile: 640px !default
+$tablet: 768px !default
+$tablet-forced-header: 1280px !default;
+$tablet-lg: 1024px !default
+$desktop: 1280px !default
+$desktop-lg: 1920px !default
+
+
+/* Fonts */
+
+$lh-condensed-ultra: 1 !default;
+$lh-default: 1.2 !default;
+
+/* Body */
+
+$body-background-color: $white;
+$body-color: $dark;
+$body-font: "Lato", BlinkMacSystemFont, "Roboto", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$body-font-size: 16px !default;
+$body-line-height: $lh-default !default;

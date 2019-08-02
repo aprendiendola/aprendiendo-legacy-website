@@ -1,0 +1,39 @@
+@import "../../sass/utils/index";
+
+.classes-modal-content {
+  background-color: $white;
+  bottom: 0;
+  color: $black;
+  left: 0;
+  margin: auto;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  @include tablet-lg {
+    overflow: auto;
+    min-height: 568px;
+    position: relative;
+  }
+}
+
+.classes-close-modal {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  width: 14px;
+  z-index: 1;
+}
+
+.classes-content-wrapper {
+  height: 480px;
+  overflow-y: scroll;
+  padding: 0 15px 20px;
+
+  @include tablet-lg {
+    padding: 0 50px 50px;
+  }
+}
