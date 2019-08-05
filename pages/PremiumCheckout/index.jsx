@@ -8,7 +8,7 @@ import service from 'services';
 import loadingSvg from 'static/images/loading.svg';
 import './styles.scss';
 import Payment from './components/Payment';
-import { pay, checkoutInitialState } from '../../reducers/checkout';
+import { pay, checkoutInitialState, handleCheckoutViewed } from '../../reducers/checkout';
 import { updateFullUser as updateUser } from 'reducers/auth';
 import { updateRoute } from 'reducers/history';
 import CashPaymentAdvise from './components/CashPaymentAdvise';
@@ -28,8 +28,9 @@ class Checkout extends PureComponent {
   };
 
   componentDidMount() {
-    const { token, router, setRoute } = this.props;
+    const { token, router, setRoute, handleCheckoutViewed } = this.props;
 
+    handleCheckoutViewed(true);
     if (!token) {
       setRoute(router.asPath);
       pushRoute(`/${service.getCountry().countryCode}/login`);
@@ -104,7 +105,8 @@ const mapDispatchToProps = {
   pay,
   checkoutInitialState,
   updateUser: (token, user) => updateUser(token, user),
-  setRoute: route => updateRoute(route)
+  setRoute: route => updateRoute(route),
+  handleCheckoutViewed: bool => handleCheckoutViewed(bool)
 };
 
 export default compose(
