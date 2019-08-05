@@ -238,7 +238,8 @@ class Register extends Component {
       loginFacebook: loginWithFb,
       loginGoogle: loginWithGoogle,
       facebookAppId,
-      googleClientId
+      googleClientId,
+      isCheckoutViewed,
     } = this.props;
 
     const optionSelected = registerMethod !== null;
@@ -271,7 +272,7 @@ class Register extends Component {
                 <Fragment>
                   <TitleSection
                     center
-                    title="Regístrate"
+                    title={isCheckoutViewed ? "Regístrate y ten tu primera clase GRATIS" : "Regístrate"}
                     style={{ maxWidth: "initial" }}
                     extraTitle
                     centerOnMobile
@@ -368,7 +369,9 @@ class Register extends Component {
   }
 }
 
-const mapStateToProps = ({ register, auth, history }) => ({
+const mapStateToProps = ({
+  register, auth, history, checkout
+}) => ({
   errorMessages: register.registerErrorMessages,
   registerSuccess: register.userCreated,
   loading: register.loading,
@@ -378,7 +381,8 @@ const mapStateToProps = ({ register, auth, history }) => ({
   history: history.lastRoute,
   facebookAppId: auth.facebookAppId,
   loginSuccess: auth.userSignIn,
-  user: auth.user
+  user: auth.user,
+  isCheckoutViewed: checkout.isCheckoutViewed
 });
 
 const mapDispatchToProps = {

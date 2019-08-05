@@ -8,6 +8,7 @@ const ON_CHECKOUT_FAILURE = 'ap/checkout/ON_CHECKOUT_FAILURE';
 const TO_INITIAL_STATE = 'ap/checkout/TO_INITIAL_STATE';
 const STORE_PRICE = 'ap/checkout/STORE_PRICE';
 const SET_TRIAL_DAYS = 'ap/checkout/SET_TRIAL_DAYS';
+const CHECKOUT_VIEWED = 'ap/checkout/CHECKOUT_VIEWED'
 
 // Actions
 
@@ -58,13 +59,19 @@ export const checkoutInitialState = () => ({
   type: TO_INITIAL_STATE
 });
 
+
+export const handleCheckoutViewed = payload => dispatch => {
+  dispatch({ type: CHECKOUT_VIEWED, payload });
+};
+
 // Reducers
 const initialState = {
   isPaid: false,
   finalPrice: 0,
   finalItems: [],
   error: null,
-  trialDays: 5
+  trialDays: 5,
+  isCheckoutViewed: false
 };
 
 export default (state = initialState, action = {}) => {
@@ -98,6 +105,13 @@ export default (state = initialState, action = {}) => {
     return {
       ...state,
       trialDays: action.payload
+    };
+  }
+
+  if (action.type === CHECKOUT_VIEWED) {
+    return {
+      ...state,
+      isCheckoutViewed: action.payload
     };
   }
 
