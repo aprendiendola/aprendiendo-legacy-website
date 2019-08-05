@@ -272,7 +272,7 @@ class Register extends Component {
                 <Fragment>
                   <TitleSection
                     center
-                    title={isCheckoutViewed ? "Regístrate y ten tu primera clase GRATIS" : "Regístrate"}
+                    title={isCheckoutViewed ? "Regístrate" : "Regístrate y ten tu primera clase GRATIS"}
                     style={{ maxWidth: "initial" }}
                     extraTitle
                     centerOnMobile
