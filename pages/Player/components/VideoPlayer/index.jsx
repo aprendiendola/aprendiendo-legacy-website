@@ -428,7 +428,11 @@ class VideoPlayer extends Component {
 
   toggleTeacherContact = () => {
     const { teacherContactActive } = this.state;
-    this.setState({ teacherContactActive: !teacherContactActive });
+    this.setState({ teacherContactActive: !teacherContactActive }, () => {
+      if (this.state.teacherContactActive) {
+        setTimeout(() => this.toggleTeacherContact(), 4000);
+      }
+    });
   };
 
   killAllSessions() {
