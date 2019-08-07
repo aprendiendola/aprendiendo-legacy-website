@@ -70,7 +70,7 @@ class Courses extends Component {
     loadingTeachers: false,
     universities: [],
     universityList: [],
-    selectedUniversity: 0,
+    selectedUniversity: '',
     universityDetails: {},
     categorySelected: '',
     categories,
@@ -217,8 +217,6 @@ class Courses extends Component {
 
         if (university) {
           this.onUniversityFilterSelect(university);
-        } else {
-          this.onUniversityFilterSelect(response.data[0])
         }
       }
     } catch (error) {
