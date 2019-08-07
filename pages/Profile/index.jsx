@@ -13,7 +13,8 @@ import {
   Configuration,
   Referrals,
   HorizontalMenu,
-  VerticalMenu
+  VerticalMenu,
+  MyData,
 } from './components';
 import { Container, ContentSection, ContainerWrapper } from './styles';
 import { getUrlParams } from 'utils/common';
@@ -46,6 +47,10 @@ class Profile extends Component {
 
     if (getUrlParams(router.asPath).referrals) {
       this.setSelectedSection('referrals');
+    }
+
+    if (getUrlParams(router.asPath).referrals) {
+      this.setSelectedSection('data');
     }
 
     getUserAccess();
@@ -92,6 +97,7 @@ class Profile extends Component {
             {selectedSection === 'subscription' && <Subscription token={token} user={user} setSelectedSection={this.setSelectedSection} />}
             {selectedSection === 'configuration' && <Configuration token={token} user={user} setSelectedSection={this.setSelectedSection} />}
             {selectedSection === 'referrals' && <Referrals token={token} user={user} setSelectedSection={this.setSelectedSection} />}
+            {selectedSection === 'data' && <MyData token={token} user={user} setSelectedSection={this.setSelectedSection} />}
           </ContentSection>
         </ContainerWrapper>
       </Container>

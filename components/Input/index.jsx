@@ -15,7 +15,8 @@ const Input = ({
   type,
   hidden,
   style,
-  labelStyle
+  labelStyle,
+  disabled,
 }) => (
   <div className="container-input">
     {label
@@ -38,6 +39,7 @@ const Input = ({
       onBlur={handleBlur}
       hidden={hidden}
       style={style}
+      disabled={disabled}
     />
     {hasError && !hidden && (
     <div className="error-message-input">

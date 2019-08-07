@@ -5,6 +5,7 @@ import videoIcon from 'assets/images/icons/video@2x.png';
 import rocketIcon from 'assets/images/rocket2.svg';
 import cogIcon from 'assets/images/icons/cog.svg';
 import referralIcon from 'assets/images/icons/referral_icon.svg';
+import userIcon from 'assets/images/icons/user.svg';
 import facebookPixel from 'utils/facebook';
 
 const Container = styled.div`
@@ -84,6 +85,17 @@ export default ({ setSelectedSection, activeTab }) => {
             </div>
           <div>
             {'Configuración'}
+          </div>
+        </BoxItem>
+        <BoxItem
+          onClick={() => setSelectedSection('data')}
+          active={activeTab === 'data'}
+        >
+          <div>
+              <img src={userIcon} alt="config" style={{ height: 18 }} />
+            </div>
+          <div>
+            {'Mis Datos'}
           </div>
         </BoxItem>
       </Container>
