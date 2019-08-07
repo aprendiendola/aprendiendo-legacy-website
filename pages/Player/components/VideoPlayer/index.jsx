@@ -21,6 +21,8 @@ import {
 import vimeoId from "../../../../utils/validate";
 import teacherNotification from "assets/images/icons/teacher-notification.svg";
 
+let preventMultipleTimeouts = [];
+
 class VideoPlayer extends Component {
   activities = {};
 
@@ -430,7 +432,9 @@ class VideoPlayer extends Component {
     const { teacherContactActive } = this.state;
     this.setState({ teacherContactActive: !teacherContactActive }, () => {
       if (this.state.teacherContactActive) {
-        setTimeout(() => this.toggleTeacherContact(), 4000);
+        preventMultipleTimeouts.map(timeout => clearTimeout(timeout));
+        preventMultipleTimeouts = [];
+        preventMultipleTimeouts.push(setTimeout(() => this.toggleTeacherContact(), 4000));
       }
     });
   };
