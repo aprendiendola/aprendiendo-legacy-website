@@ -40,10 +40,10 @@ const FreezedModal = ({
           </Fragment>
         )}
         <ModalFooterContainer>
-          <LargeButton style={{ padding: '0px 16px    ' }} loading={loading} handleClick={unfreeze}>
+          <LargeButton style={{ padding: '0px 16px', marginBottom: '12px' }} loading={loading} handleClick={unfreeze}>
             Descongelar
           </LargeButton>
-          <LargeButton outlined handleClick={toggleModal} style={{ marginLeft: '12px' }}>
+          <LargeButton outlined handleClick={toggleModal}>
             Cerrar
           </LargeButton>
         </ModalFooterContainer>
