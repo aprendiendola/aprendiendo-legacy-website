@@ -141,6 +141,7 @@ class Courses extends Component {
     const selectedUniversity = {
       value: university.id,
       label: university.name,
+      color: university.color,
     }
 
     this.setState({ selectedUniversity, teachersFilter: '' });
@@ -396,7 +397,7 @@ class Courses extends Component {
       <Fragment>
         <Banner />
         {/* <ReferralBanner showBanner={true} isSubscribed={user && user.subscription} loggedIn={token && user} /> */}
-        <CoursesHeaderContainer>
+        <CoursesHeaderContainer hasColor={selectedUniversity && selectedUniversity.color}>
           <TitleContainer>
             <Title>
               {selectedUniversity ? selectedUniversity.label : 'Aprendiendo.la'}
@@ -432,7 +433,8 @@ class Courses extends Component {
                   onBlur={() => {}}
                   options={universities && universities.map(university => ({
                     label: university.name,
-                    value: university.id
+                    value: university.id,
+                    color: university.color
                   }))}
                 />
               </div>
