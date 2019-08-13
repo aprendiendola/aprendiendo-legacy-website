@@ -41,7 +41,6 @@ const LessonsList = ({
   showModalQuiz,
   isAccountFreezed
 }) => {
-  console.log(lessons);
   const list = lessons.map((lesson, index) => {
     const isLessonAcquired = userEnrollment.find(
       acquiredLesson => acquiredLesson.id == lesson.id
