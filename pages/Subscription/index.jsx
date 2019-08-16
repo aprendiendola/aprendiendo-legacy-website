@@ -133,6 +133,10 @@ class Subscription extends Component {
       this.setState({
         plans: sortedPlans,
         tabPlanSelected: featuredPlan.provider_id
+      }, () => {
+        if (this.props.router.asPath.search("#pricing")) {
+          document.querySelector("#pricing").scrollIntoView();
+        }
       });
     } catch (err) {
       return err;
