@@ -276,7 +276,7 @@ class Subscription extends Component {
             </Fragment>
           }
           customSubtitle={
-            <p style={{ margin: "15px auto 45px", textAlign: "center" }}>
+            <p style={{ margin: "15px auto 30px", textAlign: "center" }}>
               <b
                 role="presentation"
                 style={{
