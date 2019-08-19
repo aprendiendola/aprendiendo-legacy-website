@@ -6,8 +6,8 @@ import blueBkg from 'assets/images/header_blue.svg';
 
 const CoursesHeaderContainer = styled.div`
   display: flex;  
-  background-color: #000;
-  background-image: url(${blueBkg});
+  background-color: ${({ hasColor }) => hasColor || '#fff'};
+  ${({ hasColor }) => (hasColor ? '' : `background-image: url(${blueBkg});`)}
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

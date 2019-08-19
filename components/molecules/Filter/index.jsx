@@ -43,7 +43,8 @@ class Filter extends Component {
               onBlur={() => {}}
               options={universities && universities.map(university => ({
                 label: university.name,
-                value: university.id
+                value: university.id,
+                color: university.color
               }))}
             />
           </div>
