@@ -104,7 +104,7 @@ const TabHeader = styled.div`
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 `;
 
 const Tab = styled.div`

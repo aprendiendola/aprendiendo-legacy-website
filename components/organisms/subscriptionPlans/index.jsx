@@ -6,6 +6,7 @@ import {
   Label,
   SubscriptionCardWBenefits
 } from "components";
+import Select from "components/Select";
 import { connect } from "react-redux";
 import { withRouter } from "next/router";
 import { setFinalPrice } from "../../../reducers/checkout";
@@ -140,7 +141,6 @@ const SubscriptionPlans = ({
               maxWidth: "1620px",
               position: "relative",
               alignItems: "initial",
-              marginTop: "50px"
             }}
           >
             {Array.isArray(plans) && (
@@ -190,30 +190,14 @@ const SubscriptionPlans = ({
           {plans && (
             <ShowTabPlanOnMobile>
               <TabHeader>
-                {plans.map(({ active, nickname, metadata, provider_id }) => {
-                  if (!active) return null;
-
-                  const isFeatured = isItFeatured(metadata);
-
-                  return (
-                    <Tab
-                      isHighlight={provider_id === tabPlanSelected}
-                      isActive={provider_id === tabPlanSelected || isFeatured}
-                      onClick={() => onTabPlanClick(provider_id)}
-                    >
-                      <Label
-                        fontSize="16px"
-                        color={
-                          provider_id === tabPlanSelected ? "#fff" : "#414042"
-                        }
-                        weight="black"
-                        isClickable
-                      >
-                        {nickname || "Lorem"}
-                      </Label>
-                    </Tab>
-                  );
-                })}
+                <Select
+                  id="Plans"
+                  handleChange={e => onTabPlanClick(e.target.value)}
+                  value={tabPlanSelected}
+                  placeholder="Selecciona tu plan"
+                  items={plans.map(({ nickname, provider_id }) => ({ id: provider_id, name: nickname }))}
+                  style={{ minWidth: "250px" }}
+                />
               </TabHeader>
               {renderPlanSelected(
                 plans,
