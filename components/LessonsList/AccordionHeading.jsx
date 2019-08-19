@@ -79,7 +79,7 @@ const AccordionHeading = ({
       </div>
     </div>
     <div className="lesson-list-labels">
-      {lesson.is_free && (
+      {(isLessonAcquired || lesson.is_free) && (
         <span className="lesson-list-label-free">
           {'Gratis'}
         </span>
