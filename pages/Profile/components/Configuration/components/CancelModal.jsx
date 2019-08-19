@@ -76,24 +76,31 @@ const SecondScreen = ({
       <RadioButton key='dont_need_it_anymore' value='dont_need_it_anymore' label='Ya no me sirve' />
       <RadioButton key='others' value='others' label='Otros' />
     </RadioButtonGroup>
-    {cancelFormData.selectedReason === 'others' && (<div style={{ padding: "10px 0px"}}>
-      <input
-        style={{
-          width: '100%',
-          padding: 8
-        }}
-        type="text"
-        placeholder="Cuéntanos por qué nos dejas"
-        value={cancelFormData.otherText}
-        onChange={e => onOtherTextChange(e.target.value)}
-      />
-    </div>)}
+    {cancelFormData.selectedReason === 'others' && (
+      <div style={{ padding: "10px 0px"}}>
+        <input
+          style={{
+            width: '100%',
+            padding: 8
+          }}
+          type="text"
+          placeholder="Cuéntanos por qué nos dejas"
+          value={cancelFormData.otherText}
+          onChange={e => onOtherTextChange(e.target.value)}
+        />
+        {cancelFormData.otherText.length <= 5 && (
+          <Paragraph style={{ fontSize: '12px', color: 'red' }}>
+            *Campo requerido
+          </Paragraph>
+        )}
+      </div>
+    )}
     <ModalFooterContainer>
       <ModalFooterWrapper>
         <div style={{ padding: '5px 10px'}}>
             <LargeButton
               loading={loading}
-              disabled={loading}
+              disabled={loading || (cancelFormData.selectedReason === 'others' && cancelFormData.otherText.length <= 5)}
               style={{
                 background: loading && '#07a1fb',
                 cursor: loading && 'wait'
