@@ -41,10 +41,10 @@ const FreezeModal = ({
         {/* <StrongParagraph>¿Por qué congelas tu Plan Premium?</StrongParagraph> */}
 
         <ModalFooterContainer>
-          <LargeButton loading={loading} handleClick={freeze}>
+          <LargeButton loading={loading} handleClick={freeze} style={{ marginBottom: '12px' }}>
             {loading ? 'Cargando...' : 'Congelar'}
           </LargeButton>
-          <LargeButton outlined handleClick={toggleModal} style={{ marginLeft: '12px' }}>
+          <LargeButton outlined handleClick={toggleModal}>
             Volver
           </LargeButton>
         </ModalFooterContainer>
