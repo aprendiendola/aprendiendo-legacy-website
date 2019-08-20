@@ -6,6 +6,7 @@ const SET_COUPON = 'ap/coupons/SET_COUPON';
 const CLEAR_COUPON = 'ap/coupons/CLEAR_COUPON';
 const SET_COUPON_ERROR = 'ap/coupons/SET_COUPON_ERROR';
 const CLEAR_COUPON_ERROR = 'ap/coupons/CLEAR_COUPON_ERROR';
+const COUPON_BANNER_VIEWED = 'ap/coupons/COUPON_BANNER_VIEWED'
 
 // Actions
 export const setCouponCode = couponCode => dispatch => dispatch({
@@ -43,13 +44,18 @@ export const validateCouponCode = (couponCode, token) => async dispatch => {
   }
 };
 
+export const handleCouponBanner = payload => dispatch => {
+  dispatch({ type: COUPON_BANNER_VIEWED, payload });
+};
+
 // Reducers
 const initialState = {
   couponCode: null,
   coupon: null,
   couponError: null,
   couponSource: 'direct',
-  couponMedium: ''
+  couponMedium: '',
+  isCouponBannerViewed: false,
 };
 
 export default (state = initialState, action = {}) => {
@@ -93,6 +99,13 @@ export default (state = initialState, action = {}) => {
     return {
       ...state,
       couponError: null
+    };
+  }
+
+  if (action.type === COUPON_BANNER_VIEWED) {
+    return {
+      ...state,
+      isCouponBannerViewed: action.payload
     };
   }
 

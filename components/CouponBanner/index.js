@@ -7,6 +7,7 @@ import { BannerContainer, BannerInfoContainer, TextSection, CloseIcon } from './
 import service from 'services';
 import premiumIcon from 'static/images/free-trial-premium.svg';
 import closeBanner from 'static/images/close-banner.svg';
+import { handleCouponBanner } from '../../reducers/coupons';
 
 
 const SUBSCRIBED = 'subscribed';
@@ -20,13 +21,16 @@ class Banner extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({
-      showBanner: true
-    });
+    if (!this.props.isCouponBannerViewed || this.props.router.asPath === '/pe/suscripcion') {
+      this.setState({
+        showBanner: true
+      });
+    }
   }
 
   hideBanner() {
     this.setState({ showBanner: false });
+    this.props.handleCouponBanner(true);
   }
 
   render() {
@@ -47,8 +51,8 @@ class Banner extends React.Component {
             <BannerInfoContainer>
               <img src={premiumIcon} alt="" />
               <TextSection>
-                <h3>Vuélvete Premium Gratis</h3>
-                <p>Y obtén un descuentazo adicional con el código <span style={{ color: '#87e400' }}>{couponCode.toUpperCase()}</span></p>
+                <h3>¡SOLO POR HOY!</h3>
+                <p>Utiliza el cupón <span style={{ color: '#87e400' }}>{couponCode.toUpperCase()} al momento de comprar y obtén un super descuento.</span></p>
               </TextSection>
               <div>
                 <button
@@ -56,7 +60,7 @@ class Banner extends React.Component {
                     Router.pushRoute(`/${service.getCountry().countryCode}/pruebalo#pricing`);
                   }
                 }
-                >Únete Ahora
+                >USAR
                 </button>
               </div>
             </BannerInfoContainer>
@@ -72,10 +76,16 @@ class Banner extends React.Component {
 
 const mapStateToProps = ({ coupons }) => ({
   couponCode: coupons.couponCode,
+  isCouponBannerViewed: coupons.isCouponBannerViewed,
 });
+
+const mapDispatchToProps = {
+  handleCouponBanner: bool => handleCouponBanner(bool)
+};
 
 export default compose(
   connect(
-    mapStateToProps
+    mapStateToProps,
+    mapDispatchToProps
   ),
 )(withRouter(Banner));
