@@ -1,6 +1,6 @@
 import { objToArr } from "./formatData";
 import queryString from "query-string";
-import { remove } from 'lodash';
+import { remove } from "lodash";
 
 export const strToSlug = str => {
   let st;
@@ -168,12 +168,19 @@ export const getLowestPriceFromPlans = (plans, noPUPC = true) => {
 
   const plansCopy = objectCopy(plans);
   const removeExperiment = remove(plansCopy, e => !e.metadata.is_experiment);
-  let filteredPlans = remove(removeExperiment, e => e.provider_name !== "aprendiendo");
+  let filteredPlans = remove(
+    removeExperiment,
+    e => e.provider_name !== "aprendiendo"
+  );
 
   if (noPUPC) {
     filteredPlans = filteredPlans.filter(({ metadata }) => {
       return metadata && Number(metadata.university_id) !== 8;
     });
+  }
+
+  if (filteredPlans.length === 0) {
+    return 0;
   }
 
   const monthlyPrice = filteredPlans[0].metadata
