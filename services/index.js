@@ -955,6 +955,28 @@ class AprendiendoService {
       return error.response;
     }
   }
+
+  static async getCardInformation(token, stripeToken) {
+    try {
+      const response = await fetchData({
+        method: "put",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`
+        },
+        url: `https://aprendiendo-api-testing.herokuapp.com/api/subscriptions/test/customer`,
+        data: JSON.stringify({
+          stripe_card_token: stripeToken.id
+        })
+      });
+
+      return response;
+    } catch (err) {
+      return {
+        error: true
+      };
+    }
+  }
 }
 
 export default AprendiendoService;
