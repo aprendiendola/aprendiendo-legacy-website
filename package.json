@@ -29,7 +29,7 @@
     "htmlescape": "^1.1.1",
     "js-cookie": "^2.2.0",
     "katex": "^0.10.2",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.21",
     "moment": "^2.22.2",
     "next": "^7.0.2",
     "next-compose-plugins": "^2.1.1",
